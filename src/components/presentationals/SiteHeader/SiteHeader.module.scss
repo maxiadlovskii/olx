@@ -1,0 +1,31 @@
+@import "../../../styles/vars";
+
+.links, .header, .setup, .nav, .link {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 0 16px;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-transform: uppercase;
+}
+.links, .nav {
+  align-items: stretch;
+}
+.link {
+  padding: 13px 18px 13px 15px;
+  &.active {
+    background-color: $success-medium;
+  }
+}
+.setup {
+  margin-left: 12px;
+}
+.setup-item {
+  padding: 17px 4px 16px 4px;
+}
