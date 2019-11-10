@@ -19,8 +19,10 @@
 }
 .link {
   padding: 13px 18px 13px 15px;
+  color: $success-medium;;
   &.active {
     background-color: $success-medium;
+    color: white;
   }
 }
 .setup {
