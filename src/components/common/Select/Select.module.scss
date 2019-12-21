@@ -1,0 +1,17 @@
+@import "../../../styles/vars";
+
+.Select {
+  box-shadow: $box-shadow-secondary;
+  width: 160px;
+  :global {
+    .ant-select-selection {
+      height: 100%;
+      width: auto;
+      display: flex;
+      align-items: center;
+    }
+    .ant-select-arrow {
+      color: $success-medium;
+    }
+  }
+}

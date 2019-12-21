@@ -1,12 +1,12 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom'
-import './App.module.css';
-import { Header, Content, Layout } from '../../common/Layout'
+import { Route, Switch, Redirect } from 'react-router-dom'
+import { Content, Layout } from '../../common/Layout'
 import { paths } from '../../../constatnts'
 import { RequestPage } from '../Request'
 import { ReviewPage } from '../Review'
 import { MessagePage } from '../Message'
 import SiteHeader from "../../containers/SiteHeader";
+import styles from './App.module.css'
 
 const routes = [
   { path: paths.REVIEW, component: ReviewPage},
@@ -17,12 +17,11 @@ const routes = [
 const App = () => (
     <div className="App">
       <Layout>
-        <Header>
           <SiteHeader />
-        </Header>
-        <Content>
+        <Content className={styles['content']}>
            <Switch>
              {routes.map( ({ path, component })=> <Route path={path} component={component} key={path}/>)}
+             <Redirect to={paths.REVIEW}/>
            </Switch>
         </Content>
       </Layout>

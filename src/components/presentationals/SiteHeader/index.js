@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './SiteHeader.module.scss';
 import { NavLink } from 'react-router-dom'
-import { PngIcon } from "../../common/Icon";
+import { PngIcon } from "../../common";
 
 export const SiteHeader = ({ menuItems, setupNav, ...rest }) => (
     <header className={styles['header']}>

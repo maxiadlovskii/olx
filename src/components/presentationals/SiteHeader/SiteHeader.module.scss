@@ -8,7 +8,7 @@
 .header {
   padding: 0 16px;
   justify-content: space-between;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: $box-shadow-primary
 }
 
 .title {

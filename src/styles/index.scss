@@ -1,3 +1,6 @@
+@import "./vars";
+@import '~antd/dist/antd.min.css';
+
 body {
   margin: 0;
   font-family: "Roboto", "Oxygen",
@@ -6,8 +9,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  font-weight: 400;
+  color: $secondary-medium;
 }
-
+.ant-layout {
+  background-color: transparent;
+}
 ul {
   list-style: none;
   padding-inline-start: 0;
@@ -21,4 +28,9 @@ a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+label {
+  display: flex;
+  align-items: center;
 }

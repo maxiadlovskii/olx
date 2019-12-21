@@ -1,0 +1,19 @@
+.fields {
+  display: flex;
+  align-items: stretch;
+}
+
+.item {
+  margin: 0 4px;
+  display: flex;
+  align-items: stretch;
+}
+
+.label {
+  margin-right: 4px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}

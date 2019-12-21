@@ -1,0 +1,25 @@
+@import "../../../styles/vars";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: $secondary-medium;
+  border: 1px solid $secondary-medium;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 10px 8px 10px 8px;
+  cursor: pointer;
+  .text {
+    padding: 0 6px;
+  }
+  height: auto;
+}
+
+.dark {
+  background-color: $secondary-medium;
+  color: white;
+  padding: 10px 29px;
+}
